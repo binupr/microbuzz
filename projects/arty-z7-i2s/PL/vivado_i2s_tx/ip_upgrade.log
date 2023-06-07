@@ -1,0 +1,37 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Nov 20 15:49:23 2021
+| Host         : binupr-home-nuc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'i2s_rom'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of i2s_rom (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sat Nov 20 15:49:22 2021
+| Host         : binupr-home-nuc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 6) to (Rev. 9)
+

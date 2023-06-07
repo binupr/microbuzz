@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/sim/i2s_tx_top_tb.vhd,1644036687,vhdl,,,,i2s_tx_top_tb,,,,,,,,
+C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_pkg.vhd,1637384043,vhdl,C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_rom_controller.vhd;C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_tx.vhd,,,i2s_pkg,,,,,,,,
+C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_rom_controller.vhd,1637384028,vhdl,C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_tx_top.vhd,,,i2s_rom_controller,,,,,,,,
+C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_tx.vhd,1630155299,vhdl,C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_tx_top.vhd,,,i2s_tx,,,,,,,,
+C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/src/i2s_tx_top.vhd,1644036794,vhdl,C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/sim/i2s_tx_top_tb.vhd,,,i2s_tx_top,,,,,,,,
+C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

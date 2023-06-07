@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Feb  6 20:59:58 2022
+# Process ID: 16684
+# Current directory: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1
+# Command line: vivado.exe -log i2s_tx_top.vds -tempDir C:/V_temp -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2s_tx_top.tcl
+# Log file: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/i2s_tx_top.vds
+# Journal file: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1\vivado.jou
+# Running On: binupr-home-nuc, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 33966 MB
+#-----------------------------------------------------------
+source i2s_tx_top.tcl -notrace

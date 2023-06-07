@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "work" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "i2s_tx_top_tb_behav" "work.i2s_tx_top_tb" "work.glbl" -log "elaborate.log" 

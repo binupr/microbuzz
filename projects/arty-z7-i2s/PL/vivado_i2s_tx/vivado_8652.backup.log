@@ -1,0 +1,358 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Nov 20 15:48:30 2021
+# Process ID: 8652
+# Current directory: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1176 C:\Users\binup\HobbyProjects\ActiveProjects\Git_repos\microbuzz\projects\arty-z7-i2s\PL\vivado_i2s_tx\vivado_i2s_tx.xpr
+# Log file: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado.log
+# Journal file: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx\vivado.jou
+# Running On: binupr-home-nuc, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 33966 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx'
+INFO: [Project 1-313] Project file moved from 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx' since last save.
+INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.gen/sources_1', nor could it be found using path 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/synth_1' of run 'synth_1' is not writable, setting it to default location 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/clk_wiz_0_synth_1' of run 'clk_wiz_0_synth_1' is not writable, setting it to default location 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/clk_wiz_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/i2s_rom_synth_1' of run 'i2s_rom_synth_1' is not writable, setting it to default location 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/i2s_rom_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/impl_1' of run 'impl_1' is not writable, setting it to default location 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/clk_wiz_0_impl_1' of run 'clk_wiz_0_impl_1' is not writable, setting it to default location 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/clk_wiz_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/binu.raghavan/Learning_Binu/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/i2s_rom_impl_1' of run 'i2s_rom_impl_1' is not writable, setting it to default location 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.srcs/utils_1/imports/i2s_rom_impl_1'.
+WARNING: [IP_Flow 19-8049] The IP file 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/ip/clk_wiz_0/clk_wiz_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'c:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/i2s_rom.gen/sources_1/ip/clk_wiz_0'. Alternatively a copy of the IP can be imported into the project using the import_ip command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2020.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-8049] The IP file 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/ip/i2s_rom/i2s_rom.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'c:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/i2s_rom.gen/sources_1/ip/i2s_rom'. Alternatively a copy of the IP can be imported into the project using the import_ip command.
+WARNING: [IP_Flow 19-2162] IP 'i2s_rom' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'i2s_rom' (customized with software release 2020.2) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'vivado_i2s_tx.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.570 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset clk_wiz_0 [get_ips  {clk_wiz_0 i2s_rom}] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_0 (Clocking Wizard 6.0) from revision 6 to revision 9
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Upgrading 'i2s_rom'
+INFO: [Project 1-386] Moving file 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/ip/i2s_rom/i2s_rom.xci' from fileset 'i2s_rom' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded i2s_rom (Block Memory Generator 8.4) from revision 4 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'i2s_rom'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {clk_wiz_0 i2s_rom}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'i2s_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+[Sat Nov 20 15:49:34 2021] Launched i2s_rom_synth_1, clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+i2s_rom_synth_1: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/i2s_rom_synth_1/runme.log
+clk_wiz_0_synth_1: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/clk_wiz_0_synth_1/runme.log
+synth_1: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 15:49:35 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 20 15:54:13 2021] Launched synth_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 15:54:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+set_property --help
+ERROR: [Common 17-170] Unknown option '--help', please type 'set_property -help' for usage info.
+set_property -help
+set_property
+
+Description: 
+Set property on object(s)
+
+Syntax: 
+set_property  [-dict <args>] [-quiet] [-verbose] <name> <value> <objects>...
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-dict]     list of name/value pairs of properties to set
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+  <name>      Name of property to set. Not valid with -dict option
+  <value>     Value of property to set. Not valid with -dict option
+  <objects>   Objects to set properties on
+
+Categories: 
+Object, PropertyAndParameter, XDC
+
+Description:
+
+  Assigns the defined property <name> and <value> to the specified <objects>.
+
+  This command can be used to define any property on an object in the design.
+  Each object has a set of predefined properties that have expected values,
+  or a range of values. The set_property command can be used to define the
+  values for these properties. To determine the defined set of properties on
+  an object, use report_property, list_property, or list_property_values.
+
+  You can also define custom properties for an object, by specifying a unique
+  <name> and <value> pair for the object. If an object has custom properties,
+  these will also be reported by the report_property and list_property
+  commands.
+
+  This command returns nothing if successful, and an error if it fails.
+
+  Note: You can use the get_property command to validate any properties that
+  have been set on an object.
+
+Arguments:
+
+  -dict - (Optional) Use this option to specify a dictionary of multiple
+  properties (<name> <value> pairs) on an object with a single set_property
+  command. Multiple <name> <value> pairs must be enclosed in quotes, "", or
+  braces, {}.
+
+    -dict "name1 value1 name2 value2 ... nameN valueN"
+
+  Note: When writing the constraints for a design using either
+  save_constraints, save_constraints_as, or write_xdc, the properties
+  specified using the -dict option will be written as separate set_property
+  commands for each name/value pair. If you don`t want the XDC constraints to
+  be expanded in this manner, you can either use the Tcl script driven
+  approach in a non-project design, or use a Tcl script as a design source in
+  your constraint set. Refer to Vivado Design Suite User Guide: Design Flows
+  Overview (UG892) for more information on non-project based design, or refer
+  to Vivado Design Suite User Guide: Using Constraints (UG903) for more
+  information on using Tcl scripts in constraint sets.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <name> - (Required) Specifies the name of the property to be assigned to
+  the object or objects. The <name> argument is case sensitive and should be
+  specified appropriately.
+
+  <value> - (Required) Specifies the value to assign to the <name> on the
+  specified object or objects. The value is checked against the property type
+  to ensure that the value is valid. If the value is not appropriate for the
+  property an error will be returned.
+
+  Note: In some cases the value of a property may include special characters,
+  such as the dash character (`-`), which can cause the tool to interpret the
+  value as a new argument to the command. In this case, you must use the
+  explicit arguments (-name, -value, -objects) instead of the implied
+  positional arguments (name, value, objects) as described here. This is
+  shown in the Examples section below.
+
+  <objects> - (Required) One or more objects to assign the property to.
+
+Examples:
+
+  Create a user-defined boolean property, TRUTH, for cell objects, and set
+  the property on a cell:
+
+    create_property -type bool truth cell  
+    set_property truth false [lindex [get_cells] 1]
+
+  Use the -dict option to specify multiple properties at one time on the
+  current design:
+
+    set_property -dict "POST_CRC enable POST_CRC_ACTION correct_and_continue" \  
+    [current_design]
+
+  The following example sets the TOP property of the current fileset to
+  define the top module of the project:
+
+    set_property top fftTop [current_fileset]  
+    set_property top_file {C:/Data/sources/fftTop.v} [current_fileset]
+
+  Note: Defining the top module requires the TOP property to be set to the
+  desired hierarchical block in the source fileset of the current project. In
+  the preceding example TOP is the property name, fftTop is the value, and
+  current_fileset is the object. In addition, the TOP_FILE property should be
+  defined to point to the data source for the top module.
+
+  This example shows how to set a property value that includes the dash
+  character, `-`. The dash can cause the tool to interpret the value as a new
+  command argument, rather than part of the value being specified, and will
+  cause an error as shown. In this case, you must use the explicit form of
+  the positional arguments in the set_property command:
+
+    set_property {XELAB.MORE_OPTIONS} {-pulse_e_style ondetect} \  
+       [get_filesets sim_1]  
+    ERROR: [Common 17-170] Unknown option `-pulse_e_style ondetect`,   
+     please type `set_property -help` for usage info. 
+    set_property -name {XELAB.MORE_OPTIONS} -value {-pulse_e_style ondetect}\  
+       -objects [get_filesets sim_1]
+
+  The following example sets the internal VREF property value for the
+  specified IO Bank:
+
+    set_property internal_vref {0.75} [get_iobanks 0]
+
+  The following example defines a DCI Cascade by setting the DCI_CASCADE
+  property for the specified IO Bank:
+
+    set_property DCI_CASCADE {14} [get_iobanks 0 ]
+
+  The following example configures the synth_1 run, setting options for
+  Vivado Synthesis 2013, and then launches the synthesis run:
+
+    set_property flow {Vivado Synthesis 2016} \  
+       [get_runs synth_1]   
+    set_property STEPS.SYNTH_DESIGN.ARGS.GATED_CLOCK_CONVERSION on \  
+       [get_runs synth_1]  
+    set_property STEPS.SYNTH_DESIGN.ARGS.FSM_EXTRACTION one_hot \  
+       [get_runs synth_1]  
+    launch_runs synth_1
+
+  This example is the same as the prior example, except that it uses the
+  -dict option to set all the properties on the synthesis run in a single
+  set_property command:
+
+    set_property -dict [ list flow {Vivado Synthesis 2016} \  
+       STEPS.SYNTH_DESIGN.ARGS.GATED_CLOCK_CONVERSION on \  
+       STEPS.SYNTH_DESIGN.ARGS.FSM_EXTRACTION \  
+       one_hot ] [get_runs synth_1]  
+    launch_runs synth_1
+
+See Also:
+
+   *  current_fileset
+   *  create_property
+   *  create_run
+   *  get_cells
+   *  get_property
+   *  get_runs
+   *  launch_runs
+   *  list_property
+   *  list_property_value
+   *  report_property
+   *  reset_property
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1500.684 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2142.855 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2142.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2142.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2242.535 ; gain = 896.965
+create_clock -period 8.000 -name i_sys_clk -waveform {0.000 4.000} [get_ports -filter { NAME =~  "*clk*" && DIRECTION == "IN" }]
+WARNING: [Constraints 18-619] A clock with name 'i_sys_clk' already exists, overwriting the previous clock with the same name.
+get_ports
+i_sys_clk i_sys_rst o_led[0] o_led[1] o_lrclk o_mclk o_sclk o_sd
+set_property target_constrs_file C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/xdc/pinout.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 20 22:29:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 22:29:55 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 20 22:33:35 2021] Launched synth_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 22:33:35 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+close_design
+set_property IOSTANDARD
+ERROR: [Common 17-163] Missing value for option 'value', please type 'set_property -help' for usage info.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 20 22:45:18 2021] Launched synth_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 22:45:18 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 20 22:51:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 22:51:15 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 20 22:56:03 2021] Launched synth_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 22:56:03 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 20 23:00:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/synth_1/runme.log
+[Sat Nov 20 23:00:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/binup/HobbyProjects/ActiveProjects/Git_repos/microbuzz/projects/arty-z7-i2s/PL/vivado_i2s_tx/vivado_i2s_tx.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 20 23:02:34 2021...

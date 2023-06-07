@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "binulib" -L "uvm" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_counter_behav" "binulib.tb_counter" "binulib.glbl" -log "elaborate.log" 

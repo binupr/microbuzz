@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../i2s_rom.gen/sources_1/ip/i2s_rom/i2s_rom_sim_netlist.vhdl" \
+"../../../../../../../i2s_rom.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" \
+
+vhdl work  \
+"../../../../../src/i2s_pkg.vhd" \
+"../../../../../src/i2s_rom_controller.vhd" \
+"../../../../../src/i2s_tx.vhd" \
+"../../../../../src/i2s_tx_top.vhd" \
+"../../../../../sim/i2s_tx_top_tb.vhd" \
+
+# Do not sort compile order
+nosort

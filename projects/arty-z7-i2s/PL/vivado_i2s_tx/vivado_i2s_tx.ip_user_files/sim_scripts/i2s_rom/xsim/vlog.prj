@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../../../../i2s_rom.gen/sources_1/ip/i2s_rom/sim/i2s_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

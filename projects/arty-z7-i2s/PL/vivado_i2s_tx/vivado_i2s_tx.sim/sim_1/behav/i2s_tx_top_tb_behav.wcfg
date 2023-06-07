@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="i2s_tx_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="i2s_pkg" />
+            <top_module name="i2s_tx_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,165.580 ns"></ZoomEndTime>
+      <Cursor1Time time="72.128 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <ValueColumnWidth column_width="209"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/i2s_tx_top_tb/s_sys_clk" type="logic">
+      <obj_property name="ElementShortName">s_sys_clk</obj_property>
+      <obj_property name="ObjectShortName">s_sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/s_sys_rst" type="logic">
+      <obj_property name="ElementShortName">s_sys_rst</obj_property>
+      <obj_property name="ObjectShortName">s_sys_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/s_mclk" type="logic">
+      <obj_property name="ElementShortName">s_mclk</obj_property>
+      <obj_property name="ObjectShortName">s_mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/s_lrclk" type="logic">
+      <obj_property name="ElementShortName">s_lrclk</obj_property>
+      <obj_property name="ObjectShortName">s_lrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/s_sclk" type="logic">
+      <obj_property name="ElementShortName">s_sclk</obj_property>
+      <obj_property name="ObjectShortName">s_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/s_sd" type="logic">
+      <obj_property name="ElementShortName">s_sd</obj_property>
+      <obj_property name="ObjectShortName">s_sd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/s_led" type="array">
+      <obj_property name="ElementShortName">s_led[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_led[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/c_clk_period" type="other">
+      <obj_property name="ElementShortName">c_clk_period</obj_property>
+      <obj_property name="ObjectShortName">c_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/i_dut/s_mmcm_locked" type="logic">
+      <obj_property name="ElementShortName">s_mmcm_locked</obj_property>
+      <obj_property name="ObjectShortName">s_mmcm_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/i_dut/i_i2s_tx/s_i2stx_fsm" type="other">
+      <obj_property name="ElementShortName">s_i2stx_fsm</obj_property>
+      <obj_property name="ObjectShortName">s_i2stx_fsm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/i_dut/i_i2s_tx/s_tx_buffer" type="array">
+      <obj_property name="ElementShortName">s_tx_buffer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tx_buffer[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/i_dut/i_mmcm/clk_in1" type="logic">
+      <obj_property name="ElementShortName">clk_in1</obj_property>
+      <obj_property name="ObjectShortName">clk_in1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/i_dut/i_mmcm/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/i_dut/i_mmcm/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_tx_top_tb/i_dut/s_mclk_rst" type="logic">
+      <obj_property name="ElementShortName">s_mclk_rst</obj_property>
+      <obj_property name="ObjectShortName">s_mclk_rst</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="binup" Host="BINUPR-HOME-NUC" Pid="14256" HostCore="8" HostMemory="033966653440">
+    </Process>
+</ProcessHandle>

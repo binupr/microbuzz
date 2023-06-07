@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl binulib  \
+"../../../../../../src/counter.vhd" \
+"../../../../../../tb/tb_counter.vhd" \
+
+# Do not sort compile order
+nosort

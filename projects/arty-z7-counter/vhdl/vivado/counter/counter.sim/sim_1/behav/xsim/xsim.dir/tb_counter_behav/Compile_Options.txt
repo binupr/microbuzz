@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "binulib" -L "secureip" --snapshot "tb_counter_behav" "binulib.tb_counter" -log "elaborate.log" 

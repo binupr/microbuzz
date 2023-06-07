@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv binulib  \
+"../../../../../../src/counter.sv" \
+"../../../../../../tb/tb_counter.sv" \
+
+# compile glbl module
+verilog binulib "glbl.v"
+
+# Do not sort compile order
+nosort
