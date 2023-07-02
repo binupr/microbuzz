@@ -29,7 +29,7 @@ module uart_tx (input i_clk,
       end
     end
   end
-  
+
   // The tx_start_detector process works on the master i_clk frequency and catches
   // short (one i_clk cycle long) impulses in the tx_start signal and keeps it for
   // the UART_tx_FSM. tx_start_detector is needed because the UART_tx_FSM works on
@@ -48,7 +48,7 @@ module uart_tx (input i_clk,
       end
     end
   end
-  
+
   // The data_index_counter process is a simple counter from 0 to 7 working on the baud
   // rate frequency. It is used to perform transformation between the parallel
   // data (stored_data) and the serial output (tx_data_out).
@@ -60,8 +60,8 @@ module uart_tx (input i_clk,
     elsif (baud_rate_clk)
       data_index <= data_index + 1;
   end
-  
-  // The UART_FSM_tx process represents a Finite State Machine which has
+
+  // The uart_tx_fsm represents a Finite State Machine which has
   // four states (IDLE, START, DATA, STOP). See inline comments for more details.
   uart_tx_fsm: always @(posedge i_clk) begin
     if (i_rst) begin
