@@ -9,3 +9,8 @@ this README is important to be kept on track for my own benefits.
  * the porjects I am working on are 
     * arty-z7-hdmi : Rewrite the HDMI controller in verilog
     * arty-z7-uart : Rewrite this UART controller in system verilog
+
+09/07/2023: 
+===========
+ * Progress on arty-z7-hdmi via project/arty-hdmi-graphics branch
+   * Created the verilog codebase for rgb timing and pixel counter modules

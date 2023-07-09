@@ -40,7 +40,7 @@ parameter P_VBLANK  = P_VFRONT + P_VSYNC + P_VBACK;
 parameter P_TOTAL_X = P_RES_X + P_HBLANK;
 parameter P_TOTAL_Y = P_RES_Y + P_VBLANK;
 
-always@(posedge i_clk)
+always @(posedge i_clk)
 begin 
   if (x == P_RES_X - 1)
     o_blank <= 1'b1;
