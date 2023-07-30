@@ -14,3 +14,8 @@ this README is important to be kept on track for my own benefits.
 ===========
  * Progress on arty-z7-hdmi via project/arty-hdmi-graphics branch
    * Created the verilog codebase for rgb timing and pixel counter modules
+
+30/07/2023: 
+===========
+ * Short Progress
+  * Added cide ub tge DVI TX clock gen module
