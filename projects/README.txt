@@ -18,4 +18,4 @@ this README is important to be kept on track for my own benefits.
 30/07/2023: 
 ===========
  * Short Progress
-  * Added cide ub tge DVI TX clock gen module
+  * Added code for DVI TX clock gen module
