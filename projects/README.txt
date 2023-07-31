@@ -19,3 +19,8 @@ this README is important to be kept on track for my own benefits.
 ===========
  * Short Progress
   * Added code for DVI TX clock gen module
+
+31/07/2023: 
+===========
+ * 1-hour weekday progress
+  * Added system verilog package for functions- good learning
