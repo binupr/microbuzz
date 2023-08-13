@@ -24,3 +24,8 @@ this README is important to be kept on track for my own benefits.
 ===========
  * 1-hour weekday progress
   * Added system verilog package for functions- good learning
+
+13/08/2023:
+============
+* Short 1-hour weekend progress
+  * Added code for oserdes & rgb_pattern modules--another good hands on learning
