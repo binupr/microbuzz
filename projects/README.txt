@@ -28,4 +28,10 @@ this README is important to be kept on track for my own benefits.
 13/08/2023:
 ============
 * Short 1-hour weekend progress
-  * Added code for oserdes & rgb_pattern modules--another good hands on learning
+  * Added verilog code for oserdes & rgb_pattern modules--another good hands on learning
+
+18/02/2024:
+===========
+* Coming back to home projects after 6 months.
+* Project focus: arty-z7-hdmi => still on git branch arty-hdmi-graphics
+  * Added verilog code for rgb_to_dvi and rst_bridge modules--good refresher and needs to do this more often
