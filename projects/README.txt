@@ -35,3 +35,9 @@ this README is important to be kept on track for my own benefits.
 * Coming back to home projects after 6 months.
 * Project focus: arty-z7-hdmi => still on git branch arty-hdmi-graphics
   * Added verilog code for rgb_to_dvi and rst_bridge modules--good refresher and needs to do this more often
+
+26/02/2024:
+===========
+* 1-1.5 hour weekend progress.
+* Project focus: arty-z7-hdmi => still on git branch arty-hdmi-graphics
+  * Added verilog code for the last two modules: sync_dff & tmds_encoder: No compile yet
