@@ -24,23 +24,23 @@ reg tmds_r[9:0];
 
 assign qm_xor[0] = i_pixel[0];
 assign qm_xor[8] = 1'b1;
-encode_xor: generate 
-  for(n=1; n <8 ; n++) begin
-    qm_xor[n] <= qm_xor[n-1] ^ i_pixel[n];
+generate 
+  for(n=1; n <8 ; n=n+1) begin: gen_encode_xor
+    assign qm_xor[n] = qm_xor[n-1] ^ i_pixel[n];
   end
 endgenerate
 
 assign qm_xnor[0] = i_pixel[0];
 assign qm_xnor[8] = 1'b1;
-encode_xnor: generate 
-  for(n=1; n <8 ; n++) begin
-    qm_xnor[n] <= qm_xnor[n-1] ~^ i_pixel[n];
+generate 
+  for(n=1; n <8 ; n= n+1) begin: gen_encode_xnor
+    assign qm_xnor[n] = qm_xnor[n-1] ~^ i_pixel[n];
   end
 endgenerate
 
 // count the number of ones in the symbol
-(for n=1; n <8; n++) begin
-  sum = sum + i_pixel[n];
+for (n=1; n <8; n= n+1) begin: gen_ones_pixel
+  assign sum = sum + i_pixel[n];
 end
 assign ones_pixel = sum;
 
@@ -56,8 +56,8 @@ begin
 end
 
 // count the number of ones in the encoded symbol
-(for n=1; n <8; n++) begin
-  sum = sum + qm_r[n];
+for (n=1; n <8; n=n+1) begin: gen_ones_qm
+  assign sum = sum + qm_r[n];
 end
 assign ones_qm_x = sum;
 
@@ -108,7 +108,8 @@ begin
           else
             bias_r <= bias_r + diff - 2;
         end
-      end 
+      end
+    end 
 end
 
 // Output assignments

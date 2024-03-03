@@ -16,8 +16,8 @@ module rgb_pattern
 
 // Local wires
 integer pos_x;
-integer ps_y;
-colors [0:7] rainbow = [24'hFF0000, 24'hFF7F00, 24'hFFFF00, 24'h00FF00, 24'h0000FF, 24'h4B0082, 24'h9400D3, 24'h000000];
+integer pos_y;
+wire [23:0] rainbow [0:7] = {24'hFF0000, 24'hFF7F00, 24'hFFFF00, 24'h00FF00, 24'h0000FF, 24'h4B0082, 24'h9400D3, 24'h000000};
 wire funct_colors[23:0];
 
 assign pos_x = i_pixel_pos % 800;
@@ -33,9 +33,9 @@ always @(posedge i_clk) begin
     o_blue  <= funct_colors[7:0];
     o_blank <= 1'b0;
   end else begin
-    o_red   <= '0;
-    o_green <= '0;
-    o_blue  <= '0;
+    o_red   <= 0;
+    o_green <= 0;
+    o_blue  <= 0;
   end
 end
 

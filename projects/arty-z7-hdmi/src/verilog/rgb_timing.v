@@ -52,7 +52,7 @@ begin
   else if (x == P_RES_X + P_HFRONT + P_HSYNC - 1)
     o_hsync <= 1'b0;
 
-  if (x == P_TOTAL_X - 1)
+  if (x == P_TOTAL_X - 1) begin
     x <= 12'b0;
     if (y == P_RES_Y + P_VFRONT - 1)
       o_vsync <= 1'b1;
@@ -63,7 +63,7 @@ begin
       y <= 12'b0;
     else
       y <= y + 1;
-  else
+  end else
     x <= x + 1;
   
 end

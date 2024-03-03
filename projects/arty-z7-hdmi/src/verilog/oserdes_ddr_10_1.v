@@ -11,7 +11,7 @@ rst_bridge oserdes_arst_inst (.i_arst(i_arst),
                               .i_clk(i_clk),
                               .o_srst(w_srst));
 
-OSERDESE2 oserdes_master_inst #(.DATA_RATE_OQ("DDR"),
+OSERDESE2 #(.DATA_RATE_OQ("DDR"),
                                 .DATA_RATE_TQ("SDR"),
                                 .DATA_WIDTH(10),
                                 .SERDES_MODE("MASTER"),
@@ -19,7 +19,7 @@ OSERDESE2 oserdes_master_inst #(.DATA_RATE_OQ("DDR"),
                                 .TBYTE_SRC("FALSE"),
                                 .TRISTATE_WIDTH(1)
                                 )
-                              (.OFB       (),
+oserdes_master_inst           (.OFB       (),
                                .OQ        (w_sdout),
                                .SHIFTOUT1 (),
                                .SHIFTOUT2 (),
@@ -48,7 +48,7 @@ OSERDESE2 oserdes_master_inst #(.DATA_RATE_OQ("DDR"),
                                .TCE       (1'b0)
                                );
 
-OSERDESE2 oserdes_slave_inst #( .DATA_RATE_OQ("DDR"),
+OSERDESE2 #( .DATA_RATE_OQ("DDR"),
                                 .DATA_RATE_TQ("SDR"),
                                 .DATA_WIDTH(10),
                                 .SERDES_MODE("SLAVE"),
@@ -56,7 +56,7 @@ OSERDESE2 oserdes_slave_inst #( .DATA_RATE_OQ("DDR"),
                                 .TBYTE_SRC("FALSE"),
                                 .TRISTATE_WIDTH(1)
                                 )
-                              (.OFB       (),
+oserdes_slave_inst            (.OFB       (),
                                .OQ        (),
                                .SHIFTOUT1 (w_shift1),
                                .SHIFTOUT2 (w_shift2),
@@ -85,8 +85,8 @@ OSERDESE2 oserdes_slave_inst #( .DATA_RATE_OQ("DDR"),
                                .TCE       (1'b0)
                                );
 
-OBUFDS tmds_obufds_inst #(.IOSTANDARD("TMDS_33"))
-                        (.O(o_sdata_p),
+OBUFDS #(.IOSTANDARD("TMDS_33"))
+tmds_obufds_inst        (.O(o_sdata_p),
                          .OB(o_sdata_n),
                          .I(w_sdout)
                          );
