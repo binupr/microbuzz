@@ -13,15 +13,14 @@ reg srst_d0_r;
 reg srst_d1_r;
 
 always @(posedge i_sclk or posedge i_arst)
-  if(i_arst == P_ARST_POLARITY) begin
-  {
-    srst_d0_r <= P_SRST_POLARITY;
-    srst_d1_r <= P_SRST_POLARITY;
-  }
-  end else begin {
-    srst_d0_r <= !(P_SRST_POLARITY);
-    srst_d1_r <= srst_d0_r;
-  }
+  begin
+    if(i_arst == P_ARST_POLARITY) begin
+      srst_d0_r <= P_SRST_POLARITY;
+      srst_d1_r <= P_SRST_POLARITY;
+    end else begin
+      srst_d0_r <= !(P_SRST_POLARITY);
+      srst_d1_r <= srst_d0_r;
+    end
   end
 
 // Output assignment
