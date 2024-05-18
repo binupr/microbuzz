@@ -1,8 +1,8 @@
 // RGB timing module
 module rgb_timing (input i_clk,
-                   output o_hsync,
-                   output o_vsync,
-                   output o_blank);
+                   output reg o_hsync,
+                   output reg o_vsync,
+                   output reg o_blank);
 
 // Parameter definitions for the different Pixel resolutions
 // 1920x1080 (1080p)
@@ -40,12 +40,15 @@ parameter P_VBLANK  = P_VFRONT + P_VSYNC + P_VBACK;
 parameter P_TOTAL_X = P_RES_X + P_HBLANK;
 parameter P_TOTAL_Y = P_RES_Y + P_VBLANK;
 
+reg [11:0] x = 12'b0;
+reg [11:0] y = 12'b0;
+
 always @(posedge i_clk)
 begin 
   if (x == P_RES_X - 1)
     o_blank <= 1'b1;
   else if ((x == P_TOTAL_X - 1) && (( y < P_RES_Y - 1) || (y == P_TOTAL_Y -1)))
-    o_blannk <= 1'b0;
+    o_blank <= 1'b0;
 
   if (x == P_RES_X + P_HFRONT - 1)
     o_hsync <= 1'b1;

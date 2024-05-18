@@ -55,3 +55,9 @@ this README is important to be kept on track for my own benefits.
 * Project focus:
   * Fixed the compile errors with rst_bridge & graphics_package modules. Used ChatGpt for fixing errors. Good learning on when and what to use ChatGpt
   * Started running through Vivado flow all the way to bitstream. Fixing synthesis errors on dvi_tx_clkgen.v
+
+18/05/2024:
+===========
+* ~1.5 hour weekend progress.
+* Project focus:
+  * Fixed all the Vivado compile errors across all modules--good learning of Verilog vs VHDL. Now have 71 CRITICAL WARNINGS which needs attention next ime.

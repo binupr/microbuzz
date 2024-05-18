@@ -13,10 +13,10 @@ module dvi_tx (input i_clk,
 // Instantiate clock generator module
 dvi_tx_clkgen dvi_tx_clk_gen_inst (.i_clk(i_clk),
                                    .i_arst(i_rst),
-                                   .o_rst_no_mmcm_lock(w_rst_no_mmcm_lock),
+                                   .o_locked(w_rst_no_mmcm_lock),
                                    .o_pixel_clk(w_pixel_clk),
-                                   .o_sclk(w_sclk),
-                                   .o_sclk_x5(w_sclk_x5));
+                                   .o_serdes_framing_clk(w_sclk),
+                                   .o_serdes_framing_clk_x5(w_sclk_x5));
 
 // Instantiate RGB timing module
 rgb_timing rgb_timing_inst (.i_clk(w_pixel_clk),
@@ -25,7 +25,8 @@ rgb_timing rgb_timing_inst (.i_clk(w_pixel_clk),
                             .o_blank(w_blank));
 
 // Instantiate pixel counter module
-pixel_counter pixel_counter_inst (.i_clk(w_pixel_clk),
+pixel_counter # (.MAX (800*525))
+              pixel_counter_inst (.i_clk(w_pixel_clk),
                                   .o_pixel_count(w_pixel_count));
 
 // Instantiate RGB pattern module
@@ -54,12 +55,12 @@ rgb_to_dvi rgb_to_dvi_inst (.i_sclk(w_sclk),
                             .i_blank(w_blank_r0),
                             .o_dvi_clk_p(o_dvi_clk_p),
                             .o_dvi_clk_n(o_dvi_clk_n),
-                            .o_dvi_red_p(o_dvi_red_p),
-                            .o_dvi_red_n(o_dvi_red_n),
-                            .o_dvi_blue_p(o_dvi_blue_p),
-                            .o_dvi_blue_n(o_dvi_blue_n),
-                            .o_dvi_green_p(o_dvi_green_p),
-                            .o_dvi_green_n(o_dvi_green_n));
+                            .o_dvi_tx0_p(o_dvi_red_p),
+                            .o_dvi_tx0_n(o_dvi_red_n),
+                            .o_dvi_tx1_p(o_dvi_blue_p),
+                            .o_dvi_tx1_n(o_dvi_blue_n),
+                            .o_dvi_tx2_p(o_dvi_green_p),
+                            .o_dvi_tx2_n(o_dvi_green_n));
 
 
 endmodule

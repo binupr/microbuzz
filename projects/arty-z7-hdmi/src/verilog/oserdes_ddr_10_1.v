@@ -8,7 +8,7 @@ module oserdes_ddr_10_1 (
 );
 
 rst_bridge oserdes_arst_inst (.i_arst(i_arst),
-                              .i_clk(i_clk),
+                              .i_sclk(i_clk),
                               .o_srst(w_srst));
 
 OSERDESE2 #(.DATA_RATE_OQ("DDR"),

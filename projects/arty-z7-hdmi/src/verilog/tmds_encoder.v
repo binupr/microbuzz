@@ -1,29 +1,32 @@
 module tmds_encoder (
   input i_clk,          // pixel clock
-  input i_pixel[7:0],        // pixel data
-  input i_ctrl[1:0],         // control data
+  input wire [7:0] i_pixel,        // pixel data
+  input wire [1:0] i_ctrl,         // control data
   input i_de,           // pixel data enable (not blanking)
-  output o_tmds[9:0]
+  output wire [9:0] o_tmds
 );
 
 // Local declarations
-wire qm_xor[8:0];
-wire qm_xnor[8:0];
-wire ones_pixel[3:0];
-wire qm[8:0];
+wire [8:0] qm_xor;
+wire [8:0] qm_xnor;
+wire [3:0] ones_pixel;
+wire [8:0] qm;
 
 reg de_r;
-reg ctrl_r[1:0];
-reg qm_r[8:0];
-wire ones_qm_x[3:0];
-wire bias_r;
+reg [1:0] ctrl_r;
+reg [8:0] qm_r;
+wire [3:0] ones_qm_x;
+reg bias_r;
 wire diff;
-reg tmds_r[9:0];
+reg [9:0] tmds_r;
+
+wire [3:0] sum;
 
 // First stage: transition minimised encoding
 
 assign qm_xor[0] = i_pixel[0];
 assign qm_xor[8] = 1'b1;
+genvar n;
 generate 
   for(n=1; n <8 ; n=n+1) begin: gen_encode_xor
     assign qm_xor[n] = qm_xor[n-1] ^ i_pixel[n];
@@ -45,7 +48,7 @@ end
 assign ones_pixel = sum;
 
 // select encoding based on number of ones
-assign qm = ((ones_pixel >4) || ((ones_pixel == 4) && (pixel_i[0] == 1'b0))) ? qm_xnor: qm_xor;
+assign qm = ((ones_pixel >4) || ((ones_pixel == 4) && (i_pixel[0] == 1'b0))) ? qm_xnor: qm_xor;
 
 // Second stage: Fix DC bias
 always@(posedge i_clk)

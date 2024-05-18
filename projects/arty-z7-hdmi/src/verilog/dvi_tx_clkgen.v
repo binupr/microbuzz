@@ -2,7 +2,7 @@
 module dvi_tx_clkgen (
                     input i_clk,                      // 125 MHz reference clock
                     input i_arst,                     // Aysnchronous board reset
-                    output o_slocked,                  // MMCM locked synchronised to reference clock
+                    output reg o_locked,                  // MMCM locked synchronised to reference clock
                     output o_pixel_clk,               // pixel clock
                     output o_serdes_framing_clk,      // serdes framing clock
                     output o_serdes_framing_clk_x5);  // serdes bit clock
@@ -25,12 +25,12 @@ parameter LOCKED    = 2'b01;
 // @TODO: check if this reset bridge is needed for synchronous 
 //        de-assertion of the reset
 rst_bridge rst_bridge_inst (.i_arst(i_arst),
-                            .i_clk(i_clk),
+                            .i_sclk(i_clk),
                             .o_srst(w_srst));
 
 // Sync MMCM locked signal to the reference clock domain
 sync_dff  sync_mmcm_locked_inst (.i_async(w_mmcm_locked),
-                                 .i_clk(i_clk),
+                                 .i_sclk(i_clk),
                                  .o_sync(w_mmcm_locked_synced));
 
 // @TODO: Check what is the significance of the below FSM
@@ -39,7 +39,7 @@ sync_dff  sync_mmcm_locked_inst (.i_async(w_mmcm_locked),
 // We can use the reference clock to create the pulse. The fsm
 // below will only work is the reference clk frequency is < 200MHz.
 // The BUFR needs to be reset any time the MMCM acquires lock.      
-always @(posedge i_clk, posedge w_srst) begin
+always @(posedge i_clk or posedge w_srst) begin
   if (w_srst) begin
     state_mmcm_rst <= WAIT_LOCK;
     r_mmcm_rst     <= 1'b1;
@@ -125,7 +125,7 @@ MMCME2_ADV #(
    )
    MMCME2_ADV_inst (
       // Clock Outputs: 1-bit (each) output: User configurable clock outputs
-      .CLKOUT0(sclk_x5_x),           // 1-bit output: CLKOUT0
+      .CLKOUT0(w_serdes_framing_clk_x5),           // 1-bit output: CLKOUT0
       .CLKOUT0B(),         // 1-bit output: Inverted CLKOUT0
       .CLKOUT1(w_pixel_clk),           // 1-bit output: CLKOUT1
       .CLKOUT1B(),         // 1-bit output: Inverted CLKOUT1
@@ -169,8 +169,26 @@ MMCME2_ADV #(
       .CLKFBIN(w_clkfb)            // 1-bit input: Feedback clock
    );
 
+  BUFIO BUFIO_inst (
+      .O(o_serdes_framing_clk_x5), // 1-bit output: Clock output (connect to I/O clock loads).
+      .I(w_serdes_framing_clk_x5)  // 1-bit input: Clock input (connect to an IBUF or BUFMR).
+   );
+
+  // If the clock to the BUFR is stopped, then a reset (CLR) 
+  // must be applied after the clock returns (see Xilinx UG472)
+  BUFR #(
+     .BUFR_DIVIDE("5"),   // Values: "BYPASS, 1, 2, 3, 4, 5, 6, 7, 8" 
+     .SIM_DEVICE("7SERIES")  // Must be set to "7SERIES" 
+  )
+  BUFR_inst (
+     .O(o_serdes_framing_clk),     // 1-bit output: Clock output port
+     .CE(1'b1),   // 1-bit input: Active high, clock enable (Divided modes only)
+     .CLR(r_bufr_rst), // 1-bit input: Active high, asynchronous clear (Divided modes only)
+     .I(w_serdes_framing_clk_x5)      // 1-bit input: Clock buffer input driven by an IBUF, MMCM or local interconnect
+  );
+
   // The tools will issue a warning that pixel clock is not 
-  // phase aligned to sclk_x, sclk_x5_x. We can safely
+  // phase aligned to sclk_x, w_serdes_framing_clk_x5. We can safely
   // ignore it as we don't care about the phase relationship
   // of the pixel clock to the sampling clocks.
   BUFG BUFG_inst (
@@ -178,6 +196,15 @@ MMCME2_ADV #(
      .I(w_pixel_clk)  // 1-bit input: Clock input
   );
 
-
+  always @(posedge i_clk or negedge w_mmcm_locked) begin
+    if (~w_mmcm_locked) begin
+      o_locked <= 1'b0;
+    end
+    else begin
+      // Raise locked only after BUFR has been reset
+      if (r_bufr_rst) 
+        o_locked <= 1'b1;
+    end
+  end 
 
 endmodule

@@ -6,9 +6,6 @@ module sync_dff
 );
 
 // Local declarations
-reg sync_d0_r;
-reg sync_d1_r;
-
 (* ASYNC_REG = "TRUE" *) reg sync_d0_r;
 (* ASYNC_REG = "TRUE" *) reg sync_d1_r;
 
