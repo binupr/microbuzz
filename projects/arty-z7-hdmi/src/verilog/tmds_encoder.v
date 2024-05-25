@@ -20,7 +20,8 @@ reg bias_r;
 wire diff;
 reg [9:0] tmds_r;
 
-wire [3:0] sum;
+wire [3:0] sum0;
+wire [3:0] sum1;
 
 // First stage: transition minimised encoding
 
@@ -45,7 +46,7 @@ endgenerate
 for (n=1; n <8; n= n+1) begin: gen_ones_pixel
   assign sum = sum + i_pixel[n];
 end
-assign ones_pixel = sum;
+assign ones_pixel = sum0;
 
 // select encoding based on number of ones
 assign qm = ((ones_pixel >4) || ((ones_pixel == 4) && (i_pixel[0] == 1'b0))) ? qm_xnor: qm_xor;
@@ -60,9 +61,9 @@ end
 
 // count the number of ones in the encoded symbol
 for (n=1; n <8; n=n+1) begin: gen_ones_qm
-  assign sum = sum + qm_r[n];
+  assign sum1 = sum1 + qm_r[n];
 end
-assign ones_qm_x = sum;
+assign ones_qm_x = sum1;
 
 // Calculate the difference between the number of ones (n1) and number of zeros (n0) in the encoded symbol
 assign diff = {ones_qm_x, 1'b0} - 8; // n1 - n0 = 2 * n1 -8

@@ -4,7 +4,7 @@ module rgb_pattern
   input i_hsync,
   input i_vsync,
   input i_blank,
-  input i_pixel_pos,
+  input wire [20:0] i_pixel_pos,
   output reg o_hsync,
   output reg o_vsync,
   output reg o_blank,
@@ -36,6 +36,7 @@ always @(posedge i_clk) begin
     o_red   <= 0;
     o_green <= 0;
     o_blue  <= 0;
+    o_blank <= 1'b1;
   end
 end
 

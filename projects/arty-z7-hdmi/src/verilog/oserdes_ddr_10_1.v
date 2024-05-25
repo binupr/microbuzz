@@ -7,6 +7,12 @@ module oserdes_ddr_10_1 (
   output o_sdata_n 
 );
 
+// Local wires
+wire w_srst;
+wire w_sdout;
+wire w_shift1;
+wire w_shift2;
+
 rst_bridge oserdes_arst_inst (.i_arst(i_arst),
                               .i_sclk(i_clk),
                               .o_srst(w_srst));
@@ -37,7 +43,7 @@ oserdes_master_inst           (.OFB       (),
                                .D7        (i_pdata[6]),
                                .D8        (i_pdata[7]),
                                .OCE       (1'b1),
-                               .RST       (w_rst),
+                               .RST       (w_srst),
                                .SHIFTIN1  (w_shift1),
                                .SHIFTIN2  (w_shift2),
                                .T1        (1'b0),
@@ -74,7 +80,7 @@ oserdes_slave_inst            (.OFB       (),
                                .D7        (1'b0),
                                .D8        (1'b0),
                                .OCE       (1'b1),
-                               .RST       (w_rst),
+                               .RST       (w_srst),
                                .SHIFTIN1  (1'b0),
                                .SHIFTIN2  (1'b0),
                                .T1        (1'b0),

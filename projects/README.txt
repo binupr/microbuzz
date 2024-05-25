@@ -61,3 +61,9 @@ this README is important to be kept on track for my own benefits.
 * ~1.5 hour weekend progress.
 * Project focus:
   * Fixed all the Vivado compile errors across all modules--good learning of Verilog vs VHDL. Now have 71 CRITICAL WARNINGS which needs attention next ime.
+
+25/05/2024:
+===========
+* ~1 and quarter hour weekend progress.
+* Project focus:
+  * Fixed bunch of CRITICAL WARNINGS. But then reintroduced another set of CRITICAL WARNINS :-(). Now have 77 CRITICAL WARNINGS which needs attention next ime.

@@ -10,6 +10,22 @@ module dvi_tx (input i_clk,
                output o_dvi_green_p,
                output o_dvi_green_n);
 
+// Local wires
+wire w_rst_no_mmcm_lock;
+wire w_pixel_clk;
+wire w_sclk;
+wire w_sclk_x5;
+wire w_hsync;
+wire w_vsync;
+wire w_blank;
+wire [20:0] w_pixel_count;
+wire w_hsync_r0;
+wire w_vsync_r0;
+wire w_blank_r0;
+wire [7:0] w_red;
+wire [7:0] w_blue;
+wire [7:0] w_green;
+
 // Instantiate clock generator module
 dvi_tx_clkgen dvi_tx_clk_gen_inst (.i_clk(i_clk),
                                    .i_arst(i_rst),
@@ -44,7 +60,7 @@ rgb_pattern rgb_pattern_inst (.i_clk(w_pixel_clk),
 
 // Instantiate RGB to DVI module
 rgb_to_dvi rgb_to_dvi_inst (.i_sclk(w_sclk),
-                            .i_sclk_x5(w_sclk_X5),
+                            .i_sclk_x5(w_sclk_x5),
                             .i_pixel_clk(w_pixel_clk),
                             .i_arst(w_rst_no_mmcm_lock),
                             .i_red(w_red),
