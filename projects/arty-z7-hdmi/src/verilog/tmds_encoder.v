@@ -9,19 +9,16 @@ module tmds_encoder (
 // Local declarations
 wire [8:0] qm_xor;
 wire [8:0] qm_xnor;
-wire [3:0] ones_pixel;
+reg [3:0] ones_pixel;
 wire [8:0] qm;
 
 reg de_r;
 reg [1:0] ctrl_r;
 reg [8:0] qm_r;
-wire [3:0] ones_qm_x;
+reg [3:0] ones_qm_x;
 reg bias_r;
 wire diff;
 reg [9:0] tmds_r;
-
-wire [3:0] sum0;
-wire [3:0] sum1;
 
 // First stage: transition minimised encoding
 
@@ -43,10 +40,15 @@ generate
 endgenerate
 
 // count the number of ones in the symbol
-for (n=1; n <8; n= n+1) begin: gen_ones_pixel
-  assign sum = sum + i_pixel[n];
+always @* begin:block_ones_pixel
+  integer n;
+  reg [3:0] sum;
+  sum = 0;
+  for (n=0; n <8; n= n+1) begin: gen_ones_pixel
+    sum = sum + i_pixel[n];
+  end
+  ones_pixel = sum;
 end
-assign ones_pixel = sum0;
 
 // select encoding based on number of ones
 assign qm = ((ones_pixel >4) || ((ones_pixel == 4) && (i_pixel[0] == 1'b0))) ? qm_xnor: qm_xor;
@@ -60,10 +62,21 @@ begin
 end
 
 // count the number of ones in the encoded symbol
-for (n=1; n <8; n=n+1) begin: gen_ones_qm
+always @* begin: block_ones_qm
+  integer n;
+  reg [3:0] sum;
+  sum = 0;
+  for (n=0; n <8; n= n+1) begin: gen_ones_qm
+    sum = sum + qm_r[n];
+  end
+  ones_qm_x = sum;
+end
+/*
+for (n=0; n <8; n=n+1) begin: gen_ones_qm
   assign sum1 = sum1 + qm_r[n];
 end
 assign ones_qm_x = sum1;
+*/
 
 // Calculate the difference between the number of ones (n1) and number of zeros (n0) in the encoded symbol
 assign diff = {ones_qm_x, 1'b0} - 8; // n1 - n0 = 2 * n1 -8

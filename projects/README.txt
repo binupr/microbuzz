@@ -67,3 +67,9 @@ this README is important to be kept on track for my own benefits.
 * ~1 and quarter hour weekend progress.
 * Project focus:
   * Fixed bunch of CRITICAL WARNINGS. But then reintroduced another set of CRITICAL WARNINS :-(). Now have 77 CRITICAL WARNINGS which needs attention next ime.
+
+01/06/2024:
+===========
+* ~1.5 hour weekend progress.
+* Project focus:
+  * Fixed all the synthesis and implementation errors-good learning on Verilog always block variable usage. Downloaded bitstream to Arty board but nothing happened on HDMI monitor.
