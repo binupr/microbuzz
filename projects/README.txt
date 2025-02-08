@@ -78,4 +78,4 @@ this README is important to be kept on track for my own benefits.
 ===========
 * ~2.5 hour weekend progress.
 * Project focus:
-  * Debugged the verilog design by bringing up a Vivado simulation environment and comparing against VHDL version. Fixed a reset related bug which was propagating X's thereby invalidaing the outputs. 
+  * Debugged the verilog design by bringing up a Vivado simulation environment and comparing against VHDL version. Fixed a reset related bug which was propagating X's thereby invalidating the outputs. 
