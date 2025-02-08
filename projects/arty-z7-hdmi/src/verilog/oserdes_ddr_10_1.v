@@ -17,6 +17,7 @@ rst_bridge oserdes_arst_inst (.i_arst(i_arst),
                               .i_sclk(i_clk),
                               .o_srst(w_srst));
 
+
 OSERDESE2 #(.DATA_RATE_OQ("DDR"),
                                 .DATA_RATE_TQ("SDR"),
                                 .DATA_WIDTH(10),

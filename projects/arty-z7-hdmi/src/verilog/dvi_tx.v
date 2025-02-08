@@ -12,6 +12,7 @@ module dvi_tx (input i_clk,
 
 // Local wires
 wire w_rst_no_mmcm_lock;
+wire w_mmcm_locked;
 wire w_pixel_clk;
 wire w_sclk;
 wire w_sclk_x5;
@@ -26,10 +27,13 @@ wire [7:0] w_red;
 wire [7:0] w_blue;
 wire [7:0] w_green;
 
+// Assignments
+assign w_rst_no_mmcm_lock = i_rst | ~w_mmcm_locked;
+
 // Instantiate clock generator module
 dvi_tx_clkgen dvi_tx_clk_gen_inst (.i_clk(i_clk),
                                    .i_arst(i_rst),
-                                   .o_locked(w_rst_no_mmcm_lock),
+                                   .o_locked(w_mmcm_locked),
                                    .o_pixel_clk(w_pixel_clk),
                                    .o_serdes_framing_clk(w_sclk),
                                    .o_serdes_framing_clk_x5(w_sclk_x5));
