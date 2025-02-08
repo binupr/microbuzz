@@ -73,3 +73,9 @@ this README is important to be kept on track for my own benefits.
 * ~1.5 hour weekend progress.
 * Project focus:
   * Fixed all the synthesis and implementation errors-good learning on Verilog always block variable usage. Downloaded bitstream to Arty board but nothing happened on HDMI monitor.
+
+08/02/2025:
+===========
+* ~2.5 hour weekend progress.
+* Project focus:
+  * Debugged the verilog design by bringing up a Vivado simulation environment and comparing against VHDL version. Fixed a reset related bug which was propagating X's thereby invalidaing the outputs. 
